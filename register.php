@@ -14,7 +14,7 @@
 			if (hasUser($users, $email)) {
 				echo "Email is already in use. Please choose another.";
 			} else {
-				$userId = count($users) + 1;
+				$userId = generateUniqueId();
 	
 				$newUser = [
 					'id' => $userId,

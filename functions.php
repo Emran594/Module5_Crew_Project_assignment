@@ -108,3 +108,9 @@ function deleteUser($userId) {
 
     return true; 
 }
+
+function generateUniqueId() {
+    $uniqueId = rand(10, 99);
+
+    return $uniqueId;
+}
